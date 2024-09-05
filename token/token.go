@@ -12,6 +12,7 @@ const (
 	INT       = "int"
 	MAIN      = "main"
 	VOID      = "void"
+	RETURN    = "return"
 )
 
 type Token struct {
@@ -20,7 +21,8 @@ type Token struct {
 }
 
 var keywords = map[string]TokenType{
-	"int":  INT,
-	"void": VOID,
-	"main": MAIN,
+	"int":    INT,
+	"void":   VOID,
+	"main":   MAIN,
+	"return": RETURN,
 }
